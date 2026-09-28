@@ -29,14 +29,15 @@
 
 ## Highlights
 
-- **Sampler-side and plug-and-play.** Q-Drift complements PTQ methods such as SVDQuant and MixDQ. It leaves the network untouched and changes only how each update is applied.
-- **One scalar per step.** The correction is a single precomputed factor per sampling step, derived from the conditional residual variance of the quantization error.
-- **Cheap calibration.** On SDXL, statistics from as few as **10** paired full-precision/quantized runs stay within 0.17 FID of the 1,000-run reference, even for adversarially selected subsets.
-- **Broad coverage.** FLUX.1-dev, FLUX.1-schnell, SDXL, SDXL-Turbo, PixArt-Σ, and Sana; DiT and U-Net backbones; Euler, flow-matching, and DPM-Solver++ samplers.
+- **One scalar per sampling step.** Q-Drift rescales the sampler update while keeping the quantized model weights fixed. It requires no retraining or extra model evaluations at inference.
+- **Offline calibration.** Correction factors are estimated from paired full-precision and quantized predictions. In the SDXL W3A4 study, just **10** paired calibration runs remain effective.
+- **Lower FID across the main settings.** Q-Drift improves FID in all seven main evaluation settings across six models, three samplers, and two quantization methods, while keeping CLIP scores similar.
 
 ## Method
 
-Quantization perturbs every denoiser output, and in iterative sampling these perturbations accumulate along the trajectory. Q-Drift treats the part of the quantization error that the quantized output cannot explain as an implicit stochastic perturbation. It matches its variance to the diffusion term of a generalized marginal-preserving SDE, and applies the drift paired with that diffusion as a deterministic rescaling of the quantized update:
+Q-Drift aims to reduce quantization-induced shifts in the distributions along the sampling trajectory. Generalized marginal-preserving SDEs pair diffusion with a corresponding drift to preserve the same marginals, under an exact score in continuous time. We use this relationship to derive a sampler correction.
+
+During calibration, we estimate the conditional residual variance of quantization error from paired full-precision and quantized predictions. We match an auxiliary noise model with this variance to the SDE's diffusion term, then use the paired drift to compute one correction factor per step. At inference, we apply the stored factors as a deterministic rescaling of the update. For Euler sampling, this gives
 
 $$
 \mathbf{x}_{i+1} = \mathbf{x}_i + \Delta\sigma_i\,(1+c_i)\,\hat{\epsilon}_\theta(\mathbf{x}_i,\sigma_i,c),
