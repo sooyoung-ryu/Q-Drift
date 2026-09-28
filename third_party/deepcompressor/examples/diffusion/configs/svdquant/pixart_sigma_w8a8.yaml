@@ -1,0 +1,25 @@
+pipeline:
+  # W8A8 does not require activation shifting by default.
+  shift_activations: false
+quant:
+  # Keep it simple for W8A8: no smooth / no low-rank branch.
+  enable_smooth: false
+  wgts:
+    dtype: sint8
+    group_shapes:
+    - - 1
+      - -1
+    scale_dtypes:
+    - null
+    enable_low_rank: false
+  ipts:
+    static: false
+    dtype: sint8
+    group_shapes:
+    - - -1
+      - -1
+      - -1
+    scale_dtypes:
+    - null
+    allow_unsigned: true
+

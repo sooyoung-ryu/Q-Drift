@@ -1,0 +1,177 @@
+{
+  "ref": {
+    "image_dir": "data/mjhq_fid_reference",
+    "features": "reference.npz",
+    "expected_count": 5000
+  },
+  "rows": [
+    {
+      "label": "FLUX.1-dev",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/flux.1-dev_w3a4/evaluation_paper/images/fp16",
+      "features": "flux.1-dev_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "FLUX.1-dev",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/flux.1-dev_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "flux.1-dev_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "FLUX.1-dev",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/flux.1-dev_w3a4/evaluation_paper/images/quant_bias0.0_qdrift_scale1.0_scalar",
+      "features": "flux.1-dev_w3a4/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "FLUX.1-schnell",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/flux.1-schnell_w3a4/evaluation_paper/images/fp16",
+      "features": "flux.1-schnell_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "FLUX.1-schnell",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/flux.1-schnell_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "flux.1-schnell_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "FLUX.1-schnell",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/flux.1-schnell_w3a4/evaluation_paper/images/quant_bias0.0_qdrift_scale1.0_scalar",
+      "features": "flux.1-schnell_w3a4/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/sdxl_w3a4/evaluation_paper/images/fp16",
+      "features": "sdxl_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/sdxl_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "sdxl_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/sdxl_w3a4/evaluation_paper/images/quant_bias0.0_qdrift_scale1.0_scalar",
+      "features": "sdxl_w3a4/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/sdxl-turbo_w3a4/evaluation_paper/images/fp16",
+      "features": "sdxl-turbo_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/sdxl-turbo_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "sdxl-turbo_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/sdxl-turbo_w3a4/evaluation_paper/images/quant_bias_0.0_drift1.0_scalar",
+      "features": "sdxl-turbo_w3a4/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "MixDQ W4A8",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/sdxl-turbo_w3a4/evaluation_paper/images/fp16",
+      "features": "mixdq_sdxl-turbo_w4a8/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "MixDQ W4A8",
+      "method": "Quantized",
+      "image_dir": "experiments/mixdq/sdxl-turbo_w4a8/evaluation_paper/images/quant_baseline",
+      "features": "mixdq_sdxl-turbo_w4a8/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "SDXL-Turbo",
+      "setting": "MixDQ W4A8",
+      "method": "Q-Drift",
+      "image_dir": "experiments/mixdq/sdxl-turbo_w4a8/evaluation_paper/images/quant_bias_0.0_drift1.0_scalar",
+      "features": "mixdq_sdxl-turbo_w4a8/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "PixArt-Sigma",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/pixart-sigma_w3a4/evaluation_paper/images/fp16",
+      "features": "pixart-sigma_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "PixArt-Sigma",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/pixart-sigma_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "pixart-sigma_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "PixArt-Sigma",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/pixart-sigma_w3a4/evaluation_paper/images/quant_bias0.0_qdrift_scale1.0_scalar",
+      "features": "pixart-sigma_w3a4/q_drift.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "Sana",
+      "setting": "SVDQuant W3A4",
+      "method": "FP",
+      "image_dir": "experiments/svdquant/sana_w3a4/evaluation_paper/images/fp16",
+      "features": "sana_w3a4/fp.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "Sana",
+      "setting": "SVDQuant W3A4",
+      "method": "Quantized",
+      "image_dir": "experiments/svdquant/sana_w3a4/evaluation_paper/images/quant_baseline",
+      "features": "sana_w3a4/quantized.npz",
+      "expected_count": 5000
+    },
+    {
+      "label": "Sana",
+      "setting": "SVDQuant W3A4",
+      "method": "Q-Drift",
+      "image_dir": "experiments/svdquant/sana_w3a4/evaluation_paper/images/quant_bias0.0_qdrift_scale1.0_scalar",
+      "features": "sana_w3a4/q_drift.npz",
+      "expected_count": 5000
+    }
+  ]
+}

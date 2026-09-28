@@ -1,0 +1,37 @@
+pipeline:
+  # DeepCompressor built-in name -> SDXL base 1.0
+  name: sdxl
+  path: stabilityai/stable-diffusion-xl-base-1.0
+  dtype: torch.bfloat16
+eval:
+  # Typical SDXL sampling defaults for PTQ calibration/eval.
+  num_steps: 30
+  guidance_scale: 7.5
+  protocol: dpm{num_steps}-g{guidance_scale}
+quant:
+  # Calibration cache loader batch size (NOT pipeline batch size).
+  calib:
+    batch_size: 8
+  # Model-structure-specific skip patterns (shared with other diffusion configs).
+  wgts:
+    skips:
+    - embed
+    - resblock_shortcut
+    - resblock_time_proj
+    - transformer_proj_in
+    - transformer_proj_out
+    - transformer_norm
+    - transformer_add_norm
+    - down_sample
+    - up_sample
+  ipts:
+    skips:
+    - embed
+    - resblock_shortcut
+    - resblock_time_proj
+    - transformer_proj_in
+    - transformer_proj_out
+    - transformer_norm
+    - transformer_add_norm
+    - down_sample
+    - up_sample

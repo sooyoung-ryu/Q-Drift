@@ -1,0 +1,7 @@
+{
+  "backend": "deepcompressor",
+  "examples_dir": "third_party/deepcompressor/examples/diffusion",
+  "model_config": "third_party/deepcompressor/examples/diffusion/configs/paper_models/flux.1-dev__transformer_w3a4_g64.yaml",
+  "quant_config": "third_party/deepcompressor/examples/diffusion/configs/svdquant/flux_w3a4.yaml",
+  "collect_config": "third_party/deepcompressor/examples/diffusion/configs/collect/qdiff.yaml"
+}

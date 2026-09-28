@@ -1,0 +1,33 @@
+pipeline:
+  # Keep activation shifting + SVDQuant outlier handling.
+  shift_activations: true
+quant:
+  # FLUX has very large sequence length (txt+img tokens) and MLP dims; keep calib batches small to avoid OOM.
+  calib:
+    batch_size: 1
+  # NOTE: FLUX smoothing (GridSearch) can OOM even on large GPUs due to very large seq length.
+  # Keep it off by default for robustness; see `flux_w3a4_full.yaml` to enable smooth+low-rank.
+  enable_smooth: false
+  wgts:
+    dtype: sint3
+    group_shapes:
+    - - 1
+      - 64
+      - 1
+      - 1
+      - 1
+    scale_dtypes:
+    - null
+    enable_low_rank: false
+  ipts:
+    static: false
+    dtype: sint4
+    group_shapes:
+    - - 1
+      - 64
+      - 1
+      - 1
+      - 1
+    scale_dtypes:
+    - null
+    allow_unsigned: true

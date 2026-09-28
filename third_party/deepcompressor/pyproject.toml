@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "deepcompressor-toolkit"
+version = "0.0.2"
+description = "This package is model compression toolkit for large language models and diffusion models."
+authors = [
+    "Yujun Lin",
+    "Muyang Li",
+    "Shang Yang",
+    "Zhekai Zhang",
+    "Haotian Tang",
+    "Song Han",
+]
+packages = [ { include = "deepcompressor" } ]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">= 3.10 < 4.0"
+tqdm = ">= 4.66.0"
+torch = ">= 2.5.0"
+torchvision = ">= 0.18.1"
+torchmetrics = ">= 1.4.0"
+ninja = ">= 1.11.1"
+bitsandbytes = ">= 0.42.0"
+transformers = ">= 4.46.0"
+lm_eval = ">= 0.4.2"
+accelerate = ">= 0.26.0"
+datasets = ">= 2.16.0"
+sentencepiece = ">= 0.1.99"
+omniconfig = ">= 0.1.10"
+jieba = ">= 0.42.1"
+fuzzywuzzy = ">= 0.18.0"
+rouge = ">= 1.0.1"
+python-Levenshtein = ">=0.26.1"
+protobuf = ">= 5.26.0"
+diffusers = ">= 0.32.0"
+clean-fid = ">= 0.1.35"
+dominate = ">= 2.9.1"
+opencv-python = ">= 4.10.0"
+einops = ">= 0.8.0"
+timm = ">= 1.0.7"
+rotary-embedding-torch = ">= 0.6.4"
+bs4 = ">= 0.0.2"
+ftfy = ">= 6.2.0"
+cd-fvd = ">= 0.1.1"
+xformers = ">= 0.0.26"
+# PyAV's PyPI package name is `av` (not `pyav`).
+av = ">= 13.0.0"
+clip = { version = ">= 0.2.0", optional = true }
+image_reward = { git = "https://github.com/THUDM/ImageReward.git", branch = "main", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = ">= 3.8.4"
+ipython = ">= 8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["B", "C", "E", "F", "I", "W"]
+ignore = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "F403"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

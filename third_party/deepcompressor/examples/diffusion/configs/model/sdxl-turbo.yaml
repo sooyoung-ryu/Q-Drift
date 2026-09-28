@@ -1,0 +1,38 @@
+pipeline:
+  # DeepCompressor built-in name -> SDXL-Turbo
+  name: sdxl-turbo
+  path: stabilityai/sdxl-turbo
+  dtype: torch.bfloat16
+eval:
+  # Typical SDXL-Turbo sampling defaults for PTQ calibration/eval.
+  num_steps: 4
+  guidance_scale: 0.0
+  # `protocol` is used only for organizing calibration cache folders.
+  protocol: eulerA{num_steps}-g{guidance_scale}
+quant:
+  # Calibration cache loader batch size (NOT pipeline batch size).
+  calib:
+    batch_size: 8
+  # Model-structure-specific skip patterns (copied from SDXL base config).
+  wgts:
+    skips:
+    - embed
+    - resblock_shortcut
+    - resblock_time_proj
+    - transformer_proj_in
+    - transformer_proj_out
+    - transformer_norm
+    - transformer_add_norm
+    - down_sample
+    - up_sample
+  ipts:
+    skips:
+    - embed
+    - resblock_shortcut
+    - resblock_time_proj
+    - transformer_proj_in
+    - transformer_proj_out
+    - transformer_norm
+    - transformer_add_norm
+    - down_sample
+    - up_sample

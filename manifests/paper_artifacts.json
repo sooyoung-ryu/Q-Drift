@@ -1,0 +1,958 @@
+{
+  "description": "Fixed paper checkpoints, fitted calibration statistics and configurations. Images and raw paired tensors excluded.",
+  "files": {
+    "experiments/svdquant/flux.1-dev_w3a4/model/transformer_w3a4_g64/branch.pt": {
+      "bytes": 860,
+      "sha256": "1c3b3a4ab069ffe1acade62a56bcfa3c79618b9b30f05e4e339351905efb2594",
+      "remote_path": "checkpoints/flux.1-dev_w3a4/branch.pt"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/model/transformer_w3a4_g64/model.pt": {
+      "bytes": 23803341248,
+      "sha256": "415ae478abf0ac1a961190aa57e1e8814bac1949b9626252c83c364417e070d2",
+      "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "8051685d7f5c7156674485880ed7e5e56e6d8af977a64de047ac897c0638d48c"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 536870912,
+          "sha256": "e19b0e20590d85348f82386c9c37a3e0c0cf643c616498cb92370260a20b3bca"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/002.gz.part",
+          "bytes": 536870912,
+          "sha256": "93c561a00254589115cd9c54bc6059676256f3eaf893d4685cd959a96b6440d5"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/003.gz.part",
+          "bytes": 536870912,
+          "sha256": "4c36557558363977347c0f71d1f09de5373771c1a8ce2c7c9a6d0e6185beeb7c"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/004.gz.part",
+          "bytes": 536870912,
+          "sha256": "535edbf3e5253530a3e3118e8209bfbc68bce3caa0d8616b90f3e96f8e43e276"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/005.gz.part",
+          "bytes": 536870912,
+          "sha256": "49531adf9d2be5441942c18c395c2e2cfd88f7ae86776304fc9372bfd7729cd8"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/006.gz.part",
+          "bytes": 536870912,
+          "sha256": "6806348374fb5a32d1c4cff877477e7083553a310f21c26049802168f94d7c53"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/007.gz.part",
+          "bytes": 536870912,
+          "sha256": "2cf33423498420a9f085d47402b82d4c42930e9aad8d207f1666c6a7a27e60c5"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/008.gz.part",
+          "bytes": 536870912,
+          "sha256": "9fd64c551b659e79f0dcd56b818f7bcf136f68d71b651f1e4415505382f03f0a"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/009.gz.part",
+          "bytes": 536870912,
+          "sha256": "d74b8bb380a95823b8006be227b172bea0bd153427c709abd7af94a9253468ea"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/010.gz.part",
+          "bytes": 536870912,
+          "sha256": "4a4427f6b9d1eaeeb2f9b1751ac089a7a560aec914b667e285f49076646a8084"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/011.gz.part",
+          "bytes": 536870912,
+          "sha256": "1b06fa320a1fb59c6b05f83b576e8d9ee78e6cbb8f6e1c4f18c0739d0aaeed10"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/012.gz.part",
+          "bytes": 536870912,
+          "sha256": "4c7aeecf87e7c21ade911bcd7d8334ea2368c018bdc25a1f5f6bba42735d357f"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/013.gz.part",
+          "bytes": 536870912,
+          "sha256": "cf95488a2c20d31dfd6fcbb9e61e7629048e027272528a620c070f0d10e476e8"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/014.gz.part",
+          "bytes": 536870912,
+          "sha256": "999b339e96337803e42c983bb4569bcc47d63d3a58672ac4df58d6b52023af88"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/015.gz.part",
+          "bytes": 536870912,
+          "sha256": "700f8fb583ff85ecd826e71c2a6f1630445208c720cda933089ac14fc56cf493"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/016.gz.part",
+          "bytes": 536870912,
+          "sha256": "0dc4c40570eba410343cabd7b554af319bf55f02e28cfc40d2d841f9b7b30a83"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/017.gz.part",
+          "bytes": 536870912,
+          "sha256": "ba592531c5aa898d5a33168781f2e9c4c24b594da5c7ff70db6a94c10b48d14e"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-dev_w3a4/model.pt.parts/018.gz.part",
+          "bytes": 286532314,
+          "sha256": "a48fda950e07693ed412c9fcffb8c408e4d69e86f98c2300d97b2edc27dd33c3"
+        }
+      ]
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/model/transformer_w3a4_g64/scale.pt": {
+      "bytes": 739952650,
+      "sha256": "bdd2cf18598e0e78488ac2abc02f268503c3d5714d5b530f409007c62fe57ab4",
+      "remote_path": "checkpoints/flux.1-dev_w3a4/scale.pt"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/model/transformer_w3a4_g64/wgts.pt": {
+      "bytes": 39956,
+      "sha256": "39a44b6ccf2bded3716e0e2aba23081ff477a0a5a9c528b080a2187b1af82d31",
+      "remote_path": "checkpoints/flux.1-dev_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/model/transformer_w3a4_g64/deepcompressor_config.json": {
+      "bytes": 422,
+      "sha256": "4796838f542814876cf9db1fd2fa5733ab110784c5471b030d2b648e18dfd6a4",
+      "remote_path": "checkpoints/flux.1-dev_w3a4/deepcompressor_config.json"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/model/transformer_w3a4_g64/branch.pt": {
+      "bytes": 860,
+      "sha256": "1c3b3a4ab069ffe1acade62a56bcfa3c79618b9b30f05e4e339351905efb2594",
+      "remote_path": "checkpoints/flux.1-schnell_w3a4/branch.pt"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/model/transformer_w3a4_g64/model.pt": {
+      "bytes": 23782880052,
+      "sha256": "5e7cb120ccb432343048f256e88e7f2c7022f2864ed96a8f79b1ff2119909748",
+      "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "780be3fa5bc4fc854a96dd04029bc308c0fc6e58a37b4a187fa10bff6ae1b75b"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 536870912,
+          "sha256": "e9e9612beee107318d83500038f8850803ea99301d216e95ec6f060c4a613ec7"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/002.gz.part",
+          "bytes": 536870912,
+          "sha256": "23baecc3c2a68ae5eb01548edcf1c51d54aff362fd425dae720d4c80b678541c"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/003.gz.part",
+          "bytes": 536870912,
+          "sha256": "1cb3eb91e06f7c087e9b262ecf9b70aa0068d05db103b2012f03923471f14ff4"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/004.gz.part",
+          "bytes": 536870912,
+          "sha256": "1e059a3e6b478a33a32c4de783ac03b585e22c2c2b17d9704c5d3a03ea3d4a20"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/005.gz.part",
+          "bytes": 536870912,
+          "sha256": "81c9357beda43e85a6f6aa6197e0966571b5d555416c996cdd2dfd6a6d8d313d"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/006.gz.part",
+          "bytes": 536870912,
+          "sha256": "4335b1dfd276f92b2d11c7cbf78d0e418f73ee12e423f5024495cd6993bc4e89"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/007.gz.part",
+          "bytes": 536870912,
+          "sha256": "daf7e4bfabc4fa16d2d2a40049a38cb38e60ebf45dfc1ace969ada88e6740094"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/008.gz.part",
+          "bytes": 536870912,
+          "sha256": "6252df25f2c0204cc79c2e1a9a1ce892cb3ab475f903dced93153b2afbba4b72"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/009.gz.part",
+          "bytes": 536870912,
+          "sha256": "254f157486f3eaa5ec25d27913922590ef753f7f1a22458c0280331aa9be654c"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/010.gz.part",
+          "bytes": 536870912,
+          "sha256": "ec5c10dd13ef09930afd93303ed31aeadcecf040f5eb76d35950fea2c7958de9"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/011.gz.part",
+          "bytes": 536870912,
+          "sha256": "f23017147b2ebf4abefdd5e36b28189be15f7fbc5fe227701befd49559e2e791"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/012.gz.part",
+          "bytes": 536870912,
+          "sha256": "84f68eb5bed0e76a8651ea4f13a4062a2d9826e8e341332b9dbd52773d6902f4"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/013.gz.part",
+          "bytes": 536870912,
+          "sha256": "cf73e91d122cc13b8409e93ef729bf8b09b7ad640e4bf78572f927a43b801f1b"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/014.gz.part",
+          "bytes": 536870912,
+          "sha256": "92cc201cf61a25b60048c580340e4c6521ee6fd34b8b4d328808336c16b722f5"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/015.gz.part",
+          "bytes": 536870912,
+          "sha256": "e4a9c93bd4d602b528c6cb1df47abcff29f6ee20f86bfb045c82b344652c8bb4"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/016.gz.part",
+          "bytes": 536870912,
+          "sha256": "083ade00f620bb20e44eb8414838364e56b8193d69494697aeafc5e5cfbd425b"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/017.gz.part",
+          "bytes": 536870912,
+          "sha256": "5255c27ca5fb0bf0454399b9a993d6f3e318ce991e1d4064adbebc3f898d320f"
+        },
+        {
+          "remote_path": "checkpoints/flux.1-schnell_w3a4/model.pt.parts/018.gz.part",
+          "bytes": 263774866,
+          "sha256": "868aca44c3035680694f7265d5845e5e70f8b67638976972e2946cfaf26571c6"
+        }
+      ]
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/model/transformer_w3a4_g64/scale.pt": {
+      "bytes": 739952650,
+      "sha256": "ae0a3691b6cf619ab0df73670f4289205ee2d94e610d6a6afa55ec8a7f2e9c9e",
+      "remote_path": "checkpoints/flux.1-schnell_w3a4/scale.pt"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/model/transformer_w3a4_g64/wgts.pt": {
+      "bytes": 39956,
+      "sha256": "39a44b6ccf2bded3716e0e2aba23081ff477a0a5a9c528b080a2187b1af82d31",
+      "remote_path": "checkpoints/flux.1-schnell_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/model/transformer_w3a4_g64/deepcompressor_config.json": {
+      "bytes": 426,
+      "sha256": "37c174fc61de674c52574797fa4e4183321367869780ea8bf7a73808837fd55c",
+      "remote_path": "checkpoints/flux.1-schnell_w3a4/deepcompressor_config.json"
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/branch.pt": {
+      "bytes": 147975602,
+      "sha256": "a86bc0a267568e9c3736ec66cee8104c1748c5de65d75868a88923656836464b",
+      "remote_path": "checkpoints/sdxl_w3a4/branch.pt"
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/model.pt": {
+      "bytes": 5135655023,
+      "sha256": "ac116e841c87379f42fe9821497be5a95ea83bafa847db3d6b4aa549ccfefcc8",
+      "remote_path": "checkpoints/sdxl_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/sdxl_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "ea33279279dfb176b6b1abc871e739297bec514d9167cf8d9320a954f811e0b0"
+        },
+        {
+          "remote_path": "checkpoints/sdxl_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 536870912,
+          "sha256": "d773553e78e9f137d2ddb40481c578a05bd96eb83c74a5a0fce69730c02e8a26"
+        },
+        {
+          "remote_path": "checkpoints/sdxl_w3a4/model.pt.parts/002.gz.part",
+          "bytes": 536870912,
+          "sha256": "ad20665c3b988e57e4b166ab885a19da229a3afad37dcf4a083ef81158e00a42"
+        },
+        {
+          "remote_path": "checkpoints/sdxl_w3a4/model.pt.parts/003.gz.part",
+          "bytes": 536870912,
+          "sha256": "7f22061fc4b28fcdcd69a18db8e65b8d6e299e2af58544c7aa09504ff3817480"
+        },
+        {
+          "remote_path": "checkpoints/sdxl_w3a4/model.pt.parts/004.gz.part",
+          "bytes": 118026836,
+          "sha256": "7ae7f4a7a883e9e40e7ddfc1aa033ba0f49978136763660c2480c97d419c5165"
+        }
+      ]
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/scale.pt": {
+      "bytes": 155523928,
+      "sha256": "581d736baf7432b1bbde8a614a28e8789a017e2add1cd24977c293a769ef3c93",
+      "remote_path": "checkpoints/sdxl_w3a4/scale.pt"
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/smooth.pt": {
+      "bytes": 3724272,
+      "sha256": "4a47bfef86b07be344b27914048a6b66e9e7a2d0d66f006acb0a2de77ad311e9",
+      "remote_path": "checkpoints/sdxl_w3a4/smooth.pt"
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/wgts.pt": {
+      "bytes": 68564,
+      "sha256": "f33b8b56b05a72cd9e7d2cedb06668071f106873e81b220772fdce5a25467adc",
+      "remote_path": "checkpoints/sdxl_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/sdxl_w3a4/model/unet_w3a4_g64/deepcompressor_config.json": {
+      "bytes": 387,
+      "sha256": "751a53cce7191e019fc5f7727396553efd9aed36294d6c23adc49f2db127a12e",
+      "remote_path": "checkpoints/sdxl_w3a4/deepcompressor_config.json"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/branch.pt": {
+      "bytes": 147975602,
+      "sha256": "8c2e2709ee02a6afc02975af9a3e0d73f4904a9fcda98d8cf218f2e1af31abb8",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/branch.pt"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/model.pt": {
+      "bytes": 5135655023,
+      "sha256": "55e54c99be2d565c5fb171658362ca5225fb3e12dd017697a1aa41c721b0e91c",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "ad15f50d580ff40761b62358f9361853da35262d31dd88d70cd931611fbc2086"
+        },
+        {
+          "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 536870912,
+          "sha256": "97de3e96e456475b195928637e7b8c56ed9dfe9d1d089d31965c403bd1ac36f8"
+        },
+        {
+          "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt.parts/002.gz.part",
+          "bytes": 536870912,
+          "sha256": "7c032788596bb75a33a95af04f2345e66d9c7722d21bc6b3231c2b84f6ac9219"
+        },
+        {
+          "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt.parts/003.gz.part",
+          "bytes": 536870912,
+          "sha256": "dc4449d40e8dfb0dd943973d0766c1745ab5f680200895cb7e1f910fd9f616ed"
+        },
+        {
+          "remote_path": "checkpoints/sdxl-turbo_w3a4/model.pt.parts/004.gz.part",
+          "bytes": 119971668,
+          "sha256": "f4599dccc21f2b4b67408b28a6dedc1487f243cb01a2aadbff5fecaf578c2b43"
+        }
+      ]
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/scale.pt": {
+      "bytes": 155523928,
+      "sha256": "ef5b9e8121fd82ccf627a1014df48ac2c6938a9719f4600e97881c7d411ad9fb",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/scale.pt"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/smooth.pt": {
+      "bytes": 3724272,
+      "sha256": "75b528aa6982c4766f02d37c7a976d8e4d5c8b82dcd69cf09d172ecb1206094a",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/smooth.pt"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/wgts.pt": {
+      "bytes": 68564,
+      "sha256": "f33b8b56b05a72cd9e7d2cedb06668071f106873e81b220772fdce5a25467adc",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/deepcompressor_config.json": {
+      "bytes": 415,
+      "sha256": "abb3d1c3903f7ef827e63692aeff251494d23aa85604cca73bd4481bb3747b20",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/deepcompressor_config.json"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/model/unet_w3a4_g64/deepcompressor_model_config.yaml": {
+      "bytes": 971,
+      "sha256": "5bcf0a3f25a1a0474d0c772be52157129d549f21d63cf1825e873165dd65670e",
+      "remote_path": "checkpoints/sdxl-turbo_w3a4/deepcompressor_model_config.yaml"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/branch.pt": {
+      "bytes": 41401470,
+      "sha256": "4dd7f637c1c92372d2163a446e15387de2cf0824c2ffd2ad8477953a660741af",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/branch.pt"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/model.pt": {
+      "bytes": 1221918606,
+      "sha256": "8cbe63e51b96b693392102c2d08ab30cb0b4d40080e9374855afc6e41b633568",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/pixart-sigma_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "950be5f8338528c2b0005e9d0320171983100280b2f307f833a6a37dc009e556"
+        },
+        {
+          "remote_path": "checkpoints/pixart-sigma_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 70928241,
+          "sha256": "a90d5fbffa17df8c44a64cd0b11d34b12501cbf30f98fb660173d8e0de5d8849"
+        }
+      ]
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/scale.pt": {
+      "bytes": 32642282,
+      "sha256": "03bf8f7f9b74753692773071fb58374d6d236f29ac2f0a3f5083485e6fbf273b",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/scale.pt"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/smooth.pt": {
+      "bytes": 1206454,
+      "sha256": "3004771a85317f92ba8d2bcf078bbbfa66a1674a5c07f2588ea9afe86c08ebe7",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/smooth.pt"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/wgts.pt": {
+      "bytes": 15764,
+      "sha256": "707bce12cf650a3913b8fb65498f9e719fc142e483f2736b69475f5b2c6f963e",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/model/transformer_w3a4/deepcompressor_config.json": {
+      "bytes": 514,
+      "sha256": "bb7b8c6f33ad9646b68b481a21ba3a7a29242fe8e761eabd1986b55eb53fd147",
+      "remote_path": "checkpoints/pixart-sigma_w3a4/deepcompressor_config.json"
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/branch.pt": {
+      "bytes": 55990238,
+      "sha256": "522b9991ebbc5ff9e7c3ef9950f5d4965ef56ebdc90096531ca2146d476e6148",
+      "remote_path": "checkpoints/sana_w3a4/branch.pt"
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/model.pt": {
+      "bytes": 3209056762,
+      "sha256": "513b346ffbf26fc91fca4ecb137325517626bb19a2a3a4bcaaa26f715292cd26",
+      "remote_path": "checkpoints/sana_w3a4/model.pt",
+      "encoding": "gzip",
+      "parts": [
+        {
+          "remote_path": "checkpoints/sana_w3a4/model.pt.parts/000.gz.part",
+          "bytes": 536870912,
+          "sha256": "30f73e15e5c7b114f5127a70b433f1b79fc8de711380a276e4563b3f91d259a6"
+        },
+        {
+          "remote_path": "checkpoints/sana_w3a4/model.pt.parts/001.gz.part",
+          "bytes": 536870912,
+          "sha256": "0d8c2d37a2ea4edff2a5065228f90f37abab10c4d42478590139039776f7abe4"
+        },
+        {
+          "remote_path": "checkpoints/sana_w3a4/model.pt.parts/002.gz.part",
+          "bytes": 536870912,
+          "sha256": "39cd7508c8f628c713fc27158fb939719dff29c82e567371ca98412ac4d12ca5"
+        },
+        {
+          "remote_path": "checkpoints/sana_w3a4/model.pt.parts/003.gz.part",
+          "bytes": 77178132,
+          "sha256": "b8f19cf0aaba56fc119f4131c2388800dbb849a837ed61895f522ebccbf63637"
+        }
+      ]
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/scale.pt": {
+      "bytes": 169436458,
+      "sha256": "974bf880012f70c994490ce75064792cb6d589c5fdd884e6d45f91a801ff3c25",
+      "remote_path": "checkpoints/sana_w3a4/scale.pt"
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/smooth.pt": {
+      "bytes": 1374470,
+      "sha256": "be03d65204c984ae051d1ef8af4d1ab3c58ad6cb2d4721560cb404c6b410e7ee",
+      "remote_path": "checkpoints/sana_w3a4/smooth.pt"
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/wgts.pt": {
+      "bytes": 11284,
+      "sha256": "5b3d6bb5415f7cd3a608c12a43d20ad9edd3ae333bae385f2feafd815a44f654",
+      "remote_path": "checkpoints/sana_w3a4/wgts.pt"
+    },
+    "experiments/svdquant/sana_w3a4/model/transformer_w3a4/deepcompressor_config.json": {
+      "bytes": 503,
+      "sha256": "9a59a57d81a6f7d0c82077b12481294673f304d87607c6d356f794279c377faa",
+      "remote_path": "checkpoints/sana_w3a4/deepcompressor_config.json"
+    },
+    "experiments/mixdq/sdxl-turbo_w4a8/mixdq_qdiff_ckpt/ckpt.pth": {
+      "bytes": 37540654,
+      "sha256": "a26a12ae57883ca8b470c6a22f35c535974d345800e4dfbad1712cedeb57cfbc",
+      "remote_path": "checkpoints/sdxl-turbo_w4a8/ckpt.pth"
+    },
+    "experiments/svdquant/sdxl_w3a4_ptqd/calibration/ptqd_stats.npy": {
+      "bytes": 2730,
+      "sha256": "33bbf34ccfe74707c1a1452664d5cc08c83e463611d369aec2ba102e8e3d6d3f",
+      "remote_path": "calibration/sdxl_w3a4_ptqd/ptqd_stats.npy"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/__default__.yaml": {
+      "bytes": 2439,
+      "sha256": "324280704783e0d703c8eafad0d494b70710550ab33e89adb34a317cb9ffc182",
+      "remote_path": "configs/deepcompressor/configs/__default__.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/collect/qdiff.yaml": {
+      "bytes": 98,
+      "sha256": "e987b7c6fc8cab117d2371fd9af54945e468eee97cb5c638da6e0f5dcf369a4e",
+      "remote_path": "configs/deepcompressor/configs/collect/qdiff.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/__default__.yaml": {
+      "bytes": 46,
+      "sha256": "169c8b693a901c88a543c2fe0609519f053016c8c06a86e67b1fd7fcec411eb8",
+      "remote_path": "configs/deepcompressor/configs/lora/__default__.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/flux.1-dev/anime.yaml": {
+      "bytes": 326,
+      "sha256": "79dd89e4cd54903c03dc011ad5274a86c04ae5afdcfca2490df30ff40dc3464e",
+      "remote_path": "configs/deepcompressor/configs/lora/flux.1-dev/anime.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/flux.1-dev/ghibsky.yaml": {
+      "bytes": 334,
+      "sha256": "dafb0330d9b499a7e773abc21a22a9042d6c1af90d6633e47bcd0b85e8a3360c",
+      "remote_path": "configs/deepcompressor/configs/lora/flux.1-dev/ghibsky.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/flux.1-dev/realism.yaml": {
+      "bytes": 333,
+      "sha256": "c84a52a14af9395644b17881c1612ac6e821911f65db5cee262e3524b9dcc49f",
+      "remote_path": "configs/deepcompressor/configs/lora/flux.1-dev/realism.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/flux.1-dev/sketch.yaml": {
+      "bytes": 410,
+      "sha256": "7d1a79c2df1ef86d02936810612c1ae93965607ec5ef9edd476096d7a4c2dedb",
+      "remote_path": "configs/deepcompressor/configs/lora/flux.1-dev/sketch.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/lora/flux.1-dev/yarn.yaml": {
+      "bytes": 337,
+      "sha256": "532225f9ffef068200fc8dbbba44ae2cbf721e5feb6e02e0ee0769799e398f3f",
+      "remote_path": "configs/deepcompressor/configs/lora/flux.1-dev/yarn.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/flux.1-dev.yaml": {
+      "bytes": 1181,
+      "sha256": "1a8bb203d26ecff66a36f3269f76dbc67b8016a2cf26d9c5faaffde0ab2d7376",
+      "remote_path": "configs/deepcompressor/configs/model/flux.1-dev.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/flux.1-schnell.yaml": {
+      "bytes": 1182,
+      "sha256": "b7cf8ead292590f51ba2604fb1715abbb6b63989834891398a981a7d3867562f",
+      "remote_path": "configs/deepcompressor/configs/model/flux.1-schnell.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/pixart-sigma.yaml": {
+      "bytes": 921,
+      "sha256": "24174a748f15c2552384a5835bc0d82cff190050fde005495ec80942de63a0ea",
+      "remote_path": "configs/deepcompressor/configs/model/pixart-sigma.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/sana-1.6b.yaml": {
+      "bytes": 1368,
+      "sha256": "281928f4d312a497f0c599fa7799d3371424aaf5bd36d42628c9306eaadea625",
+      "remote_path": "configs/deepcompressor/configs/model/sana-1.6b.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/sdxl-turbo.yaml": {
+      "bytes": 969,
+      "sha256": "5c562457865f87de591da3cf6724df455abb45510bca0f6f47177320933d204d",
+      "remote_path": "configs/deepcompressor/configs/model/sdxl-turbo.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/model/sdxl.yaml": {
+      "bytes": 913,
+      "sha256": "9756fffec19f47f62598b74835bf144ef03739e57e73c8f145d5658afaedd2a4",
+      "remote_path": "configs/deepcompressor/configs/model/sdxl.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/flux.1-dev__transformer_w3a4_g64.yaml": {
+      "bytes": 1216,
+      "sha256": "e3f8d73d7a94560fab15e98405b9b1066ef1128d153ab93924612b12bb84b000",
+      "remote_path": "configs/deepcompressor/configs/paper_models/flux.1-dev__transformer_w3a4_g64.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/flux.1-schnell__transformer_w3a4_g64.yaml": {
+      "bytes": 1221,
+      "sha256": "f5b1c6bb4572a6e19a01310f256cdee6e4720282df32beca2c3cb16cd456c7a3",
+      "remote_path": "configs/deepcompressor/configs/paper_models/flux.1-schnell__transformer_w3a4_g64.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/pixart-sigma__transformer_w3a4.yaml": {
+      "bytes": 970,
+      "sha256": "1a72e02af84054dcf7424fd9b8fbd12740b674fb6c302be18f4fe5232f94ca7c",
+      "remote_path": "configs/deepcompressor/configs/paper_models/pixart-sigma__transformer_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/sana-1.6b__transformer_w3a4.yaml": {
+      "bytes": 1373,
+      "sha256": "1fc3b68bbe017de5ec64f31b091c1fa35d9302cf3ae7ae0ea958feddbdcf5308",
+      "remote_path": "configs/deepcompressor/configs/paper_models/sana-1.6b__transformer_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/sdxl-turbo__unet_w3a4_g64.yaml": {
+      "bytes": 971,
+      "sha256": "5bcf0a3f25a1a0474d0c772be52157129d549f21d63cf1825e873165dd65670e",
+      "remote_path": "configs/deepcompressor/configs/paper_models/sdxl-turbo__unet_w3a4_g64.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/paper_models/sdxl.yaml": {
+      "bytes": 913,
+      "sha256": "9756fffec19f47f62598b74835bf144ef03739e57e73c8f145d5658afaedd2a4",
+      "remote_path": "configs/deepcompressor/configs/paper_models/sdxl.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/__default__.yaml": {
+      "bytes": 849,
+      "sha256": "9b99b8399067581dd3f38b3702f5b671cffce5154638721b5cab2af5ff1972dc",
+      "remote_path": "configs/deepcompressor/configs/svdquant/__default__.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/fast.yaml": {
+      "bytes": 75,
+      "sha256": "03c2f33042c75c4d0df86e693b4ddfa331ff3db6d46cec0679cc549672e65d2e",
+      "remote_path": "configs/deepcompressor/configs/svdquant/fast.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/flux_w3a4.yaml": {
+      "bytes": 768,
+      "sha256": "fccaf841b15223647e73ff60af314d6ec29e87ea3df26d6491fbdf9cbadf17e5",
+      "remote_path": "configs/deepcompressor/configs/svdquant/flux_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/flux_w3a4_full.yaml": {
+      "bytes": 1673,
+      "sha256": "0d458ab2b8454b5ee5c87143ddbe629a46c91c9f57cb0f23b3529be02a3b678d",
+      "remote_path": "configs/deepcompressor/configs/svdquant/flux_w3a4_full.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/gptq.yaml": {
+      "bytes": 165,
+      "sha256": "92e0623a28dd9d42ba139e72e6dfddb0c1e41196463d8c5768a6a601437f4071",
+      "remote_path": "configs/deepcompressor/configs/svdquant/gptq.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/int4.yaml": {
+      "bytes": 331,
+      "sha256": "6f4262a99d55a34622ddb4d0850daad86204a55656672a93918ded62782d0f37",
+      "remote_path": "configs/deepcompressor/configs/svdquant/int4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/nvfp4.yaml": {
+      "bytes": 557,
+      "sha256": "251ad5d3407752ce1115e69b6283c4b4415c7c487ca293bfa1cab37cd1e572bd",
+      "remote_path": "configs/deepcompressor/configs/svdquant/nvfp4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/pixart_sigma_w3a4.yaml": {
+      "bytes": 1419,
+      "sha256": "5e2ed6c1ec78613544db460cb8855f10e817b9ac3cbdd6de411b56cb20600469",
+      "remote_path": "configs/deepcompressor/configs/svdquant/pixart_sigma_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/pixart_sigma_w4a4.yaml": {
+      "bytes": 1360,
+      "sha256": "737d31cc43543a3394c71faa76aa9ef52fdfe8188e6e6f38d1654d0e3ae23a37",
+      "remote_path": "configs/deepcompressor/configs/svdquant/pixart_sigma_w4a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/pixart_sigma_w8a8.yaml": {
+      "bytes": 455,
+      "sha256": "29c5ae29c7e254610404f0dd43ba6faf627b7ec3d48b3f96754c172ba32538c2",
+      "remote_path": "configs/deepcompressor/configs/svdquant/pixart_sigma_w8a8.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sana_w3a4.yaml": {
+      "bytes": 1629,
+      "sha256": "a6b9ecf09f701edbe0889dc44327b34c2468c66db5bcc17d24628dec98eb41ac",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sana_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sdxl_w2a4.yaml": {
+      "bytes": 1314,
+      "sha256": "5d75539a5581d32ffb5f9dd2bfe6c65bc873366d23cf0d810332c611889013a7",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sdxl_w2a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sdxl_w3a3.yaml": {
+      "bytes": 1337,
+      "sha256": "5c8d08d9fde7e0454bba45ba730e004555b62286bf3c8daa35999cbf0b61aa37",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sdxl_w3a3.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sdxl_w3a4.yaml": {
+      "bytes": 1314,
+      "sha256": "256797b256b15f89bbef188f14e23f5a272b057edf561f74400905d269832aa4",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sdxl_w3a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sdxl_w4a4.yaml": {
+      "bytes": 1411,
+      "sha256": "6124518cc402a6b47422d522be552ba61920d415c1643415b068fbd56c42418d",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sdxl_w4a4.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/svdquant/sdxl_w6a6.yaml": {
+      "bytes": 1414,
+      "sha256": "2a9d630454ceb5667234bdddbda0eaecd1bd9654a389bda521d94e61f656a379",
+      "remote_path": "configs/deepcompressor/configs/svdquant/sdxl_w6a6.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/text/__default__.yaml": {
+      "bytes": 3967,
+      "sha256": "095339b397681964083d1617f6c846d75b5e57f1cf31d49b748dd177da43117c",
+      "remote_path": "configs/deepcompressor/configs/text/__default__.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/configs/text/awq.yaml": {
+      "bytes": 996,
+      "sha256": "10e33417cd47bd5a28a6b5a3f9806439f0408a15c0954efbd3717bc19f311289",
+      "remote_path": "configs/deepcompressor/configs/text/awq.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/lora/anime.yaml": {
+      "bytes": 5664,
+      "sha256": "689e0a70074dd9a3a75a87a3a51f8b0fc1d7339431abe3684f7218d535c3f301",
+      "remote_path": "configs/deepcompressor/prompts/lora/anime.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/lora/ghibsky.yaml": {
+      "bytes": 13573,
+      "sha256": "6527b3912840c40453bf4b0533f29b3817fee20846bca2e502ab8def074e7ce8",
+      "remote_path": "configs/deepcompressor/prompts/lora/ghibsky.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/lora/realism.yaml": {
+      "bytes": 9995,
+      "sha256": "cb6e6ab91cd5de11269287409a9bb461341d641adec5a7e3bfca54835429ea47",
+      "remote_path": "configs/deepcompressor/prompts/lora/realism.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/lora/sketch.yaml": {
+      "bytes": 10469,
+      "sha256": "a34fa45a9005770847aae26d64501c99f2899ca7da1aa00f526e1fa1f06ebb58",
+      "remote_path": "configs/deepcompressor/prompts/lora/sketch.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/lora/yarn.yaml": {
+      "bytes": 5429,
+      "sha256": "0b836cfa7f08593363d5d9e412344f6bbb0569c299099416eadc2df8d2a56d43",
+      "remote_path": "configs/deepcompressor/prompts/lora/yarn.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/qdiff-sdxl-paper.yaml": {
+      "bytes": 8351,
+      "sha256": "e15c5bce561ec78efbc18a1b9371dcbe8fe176e0c79db69fbf1cb39afcf4edcd",
+      "remote_path": "configs/deepcompressor/prompts/qdiff-sdxl-paper.yaml"
+    },
+    "third_party/deepcompressor/examples/diffusion/prompts/qdiff.yaml": {
+      "bytes": 62384,
+      "sha256": "54da57563342ef07e2bc0fddf1d224823f55cdd93a75b88df8f293d88da1a361",
+      "remote_path": "configs/deepcompressor/prompts/qdiff.yaml"
+    },
+    "experiments/mixdq/sdxl-turbo_w4a8/mixdq_qdiff_ckpt/config.yaml": {
+      "bytes": 1015,
+      "sha256": "c4d75e873b061c809f7fbfaddbaacf210308e1068675ce265a6c7064b87d0ffc",
+      "remote_path": "checkpoints/sdxl-turbo_w4a8/config.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/act/act_7.38.yaml": {
+      "bytes": 50485,
+      "sha256": "bcf8d83931b123729989eef60d567a2fe126647c1b16ca4b291f1964bfb86ca2",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/act/act_7.38.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/act/act_7.77.yaml": {
+      "bytes": 50485,
+      "sha256": "410a30a4d7abd65c2f63396e60926f7794e42550cc83e01db838043e61aaa7cb",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/act/act_7.77.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/act/act_7.84.yaml": {
+      "bytes": 50485,
+      "sha256": "1891a76aab37c707c19eafd979ec7497383d3c0cdb11542be4b88c5fc6dfd843",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/act/act_7.84.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/act/act_8.00.yaml": {
+      "bytes": 50485,
+      "sha256": "13a348c7cde35e389f34eba8b5efec751a057ccfa44d773bbe14126638b000c8",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/act/act_8.00.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/weight/weight_3.66.yaml": {
+      "bytes": 50932,
+      "sha256": "eeb52bf1df96ff079cab459367c38748060536b387c47385f931ca66d69ff93a",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/weight/weight_3.66.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/weight/weight_4.00.yaml": {
+      "bytes": 50932,
+      "sha256": "f5c5b75d3d4fe8feeef609f646318bf7bbb5a69cbfb1a04f65c0d578152e45e7",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/weight/weight_4.00.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/weight/weight_4.08.yaml": {
+      "bytes": 50932,
+      "sha256": "4980e983b68252cc6d7b51f1ee26c610bc74d804abe809781b67096dd8700cbf",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/weight/weight_4.08.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/weight/weight_5.02.yaml": {
+      "bytes": 50932,
+      "sha256": "3f0ae9edaac1a90d129e559fd99a0e8a8429181b733ff80ad7ac81905c13be37",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/weight/weight_5.02.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/weight/weight_8.00.yaml": {
+      "bytes": 50932,
+      "sha256": "cf87bc3437211f92e0292dc62942c5966cf5eeb6e1b5fe047d30c87d6db917d6",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/weight/weight_8.00.yaml"
+    },
+    "third_party/mixdq/mixed_precision_scripts/mixed_percision_config/sdxl_turbo/final_config/act/act_sensitivie_a8_1%.pt": {
+      "bytes": 899,
+      "sha256": "c0943b0212a22becd7967cb502bd6c6c5f1ed2821d9461b17166d251499b102f",
+      "remote_path": "configs/mixdq/mixed_percision_config/sdxl_turbo/final_config/act/act_sensitivie_a8_1%.pt"
+    },
+    "manifests/mjhq_splits.json": {
+      "bytes": 1778081,
+      "sha256": "8519c5b63da9f5b16b9cd5929eff7c7722b3061f4a27ab98acc37812bd653b9f",
+      "remote_path": "manifests/mjhq_splits.json"
+    },
+    "manifests/sdxl_ptq_selection.json": {
+      "bytes": 2367,
+      "sha256": "f8f0449c1eacf3070927e12e05ce26aa772dbde6945fd1713585742bfd718a9f",
+      "remote_path": "manifests/sdxl_ptq_selection.json"
+    },
+    "licenses/FLUX-dev.md": {
+      "bytes": 18621,
+      "sha256": "6f7b3d94ddd94380a4dc2d1211ed57883d320dea96f4393b34d4a454041029e1",
+      "remote_path": "licenses/FLUX-dev.md"
+    },
+    "licenses/SDXL-Turbo.md": {
+      "bytes": 11852,
+      "sha256": "d6f6b1a4dce5c852bd6d7d9482d002baf0ccdb71e662250b73be9eec8764ee8d",
+      "remote_path": "licenses/SDXL-Turbo.md"
+    },
+    "licenses/Sana.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_path": "licenses/Sana.txt"
+    },
+    "licenses/Apache-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_path": "licenses/Apache-2.0.txt"
+    },
+    "licenses/OpenRAIL++.md": {
+      "bytes": 14109,
+      "sha256": "19b6998b569b53ac1fc2158a8a3202c8699a9a4605b47075715d9c96be7fb6d0",
+      "remote_path": "licenses/OpenRAIL++.md"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 1328,
+      "sha256": "6144b247ae3d89a98d65a7171a92c09aa260073b6ee434bac05f99e3593b63e2",
+      "remote_path": "calibration/flux.1-dev_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 1688,
+      "sha256": "87803c5642c4d101ad77c4ce262a765e39783924ce05ebf80c9fc77eb1e31ff8",
+      "remote_path": "calibration/flux.1-dev_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/flux.1-dev_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 7102,
+      "sha256": "ceb592e4204155692d2786598962bda2f4b807f60e8b2a6f6dd303d97a4f6944",
+      "remote_path": "calibration/flux.1-dev_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 516,
+      "sha256": "7a91128f32fc765fd5c7ae252950af2e6cb4b30e47c1f69c7d6a13eeddcfad33",
+      "remote_path": "calibration/flux.1-schnell_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 588,
+      "sha256": "f6957553dfa190515d0d938b5fc434a32b92a93080c56527ed87245a91fcf232",
+      "remote_path": "calibration/flux.1-schnell_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/flux.1-schnell_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 3314,
+      "sha256": "e7886dff679a440f8328929a7f32fbf5ea65c08e1dff1673e82fc71b6b32032e",
+      "remote_path": "calibration/flux.1-schnell_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 1328,
+      "sha256": "a30394353507b94dae07d18ee6c9f3676f0118792e06ff2669c523ecc6460c5c",
+      "remote_path": "calibration/pixart-sigma_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 1688,
+      "sha256": "326a0b33f36b86b55520111cf3f5b03f273f774aa513ba4c148bf01e0a683496",
+      "remote_path": "calibration/pixart-sigma_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/pixart-sigma_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 7091,
+      "sha256": "8ceccb3f1bfec718798732096cc1ae11affc5fdcadb8b3645f4fbc7e92186bb3",
+      "remote_path": "calibration/pixart-sigma_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/sana_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 1453,
+      "sha256": "0daf7204bdda5a8fe7279be3bf7f5632b0ea8c5650c8ef084a8ac4fd9ecda192",
+      "remote_path": "calibration/sana_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/sana_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 1813,
+      "sha256": "a8ef000819c571ce87313a7c6e1a966a75bdad28b46fe55ec00935b6d6f15b67",
+      "remote_path": "calibration/sana_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/sana_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 7158,
+      "sha256": "e7f91b3cf5a9f08071ae979c6febd870513cca62bb70948f46329afb71eaef31",
+      "remote_path": "calibration/sana_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 516,
+      "sha256": "2cdeff4c839d2b0773c56f7704b745ee02ed836f39a5966ea4c803a552f7ff8e",
+      "remote_path": "calibration/sdxl-turbo_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 588,
+      "sha256": "9cabf148cbc6a650f40862da065034e2c020c095a8aa7441a8a453ff8474a421",
+      "remote_path": "calibration/sdxl-turbo_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl-turbo_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 3299,
+      "sha256": "eae2e06b7ba10aaef10f8a5bfa2a6477a8e3736162d8f2a9bc16c1f98d5cae2b",
+      "remote_path": "calibration/sdxl-turbo_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/sdxl_w3a4/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 1835,
+      "sha256": "0b030f4702d10cb0d4d6a380bc29629ce97cea8286769a2daf86f3c3686f273d",
+      "remote_path": "calibration/sdxl_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 2375,
+      "sha256": "f081e401dd50aba7c3b3b69d2b655f6adcdd75caa07ef62a1fa46da6b49582b0",
+      "remote_path": "calibration/sdxl_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 8015,
+      "sha256": "33c07b6d05ba5811538cacafcb173b8fe87fccab18bad64dc540633a658076e4",
+      "remote_path": "calibration/sdxl_w3a4/scalar_gaussian_metadata.json"
+    },
+    "experiments/mixdq/sdxl-turbo_w4a8/calibration_pooled_1000/mu_dict.npy": {
+      "bytes": 556,
+      "sha256": "17eef86a2a37ce3d40b5eedee76bd22fb935df1b8f3ea33394e967aaa116d584",
+      "remote_path": "calibration/sdxl-turbo_w4a8/mu_dict.npy"
+    },
+    "experiments/mixdq/sdxl-turbo_w4a8/calibration_pooled_1000/cov_dict.npy": {
+      "bytes": 628,
+      "sha256": "c8b4f8046fbc6b52dde3d8257d9f9d3ef8002091f2f9f5fedfc7ea34241f98aa",
+      "remote_path": "calibration/sdxl-turbo_w4a8/cov_dict.npy"
+    },
+    "experiments/mixdq/sdxl-turbo_w4a8/calibration_pooled_1000/scalar_gaussian_metadata.json": {
+      "bytes": 1922,
+      "sha256": "163b250c34696c978df8c6fc79614bd287a221474edb98f9199b059c7f27c3af",
+      "remote_path": "calibration/sdxl-turbo_w4a8/scalar_gaussian_metadata.json"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/reference_channelwise_k1000/mu_dict.npy": {
+      "bytes": 2315,
+      "sha256": "ce3e2b3c8591f2df48deaf878d7d34e5bf140c8eb6543877de8f3d656ae32a54",
+      "remote_path": "calibration/sdxl_w3a4_channelwise_k1000/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/reference_pooled_scalar_k1000/mu_dict.npy": {
+      "bytes": 1835,
+      "sha256": "0b030f4702d10cb0d4d6a380bc29629ce97cea8286769a2daf86f3c3686f273d",
+      "remote_path": "calibration/sdxl_w3a4/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/reference_channelwise_k1000/cov_dict.npy": {
+      "bytes": 3335,
+      "sha256": "d37ceef4a68afef5502cc5e69800a3a5be06023d0fc173c527e4b9f4d77601aa",
+      "remote_path": "calibration/sdxl_w3a4_channelwise_k1000/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/reference_pooled_scalar_k1000/cov_dict.npy": {
+      "bytes": 2375,
+      "sha256": "f081e401dd50aba7c3b3b69d2b655f6adcdd75caa07ef62a1fa46da6b49582b0",
+      "remote_path": "calibration/sdxl_w3a4/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_max_sum_abs_delta_c/mu_dict.npy": {
+      "bytes": 1835,
+      "sha256": "6a2d7684f3805b73631ccfbd85be005453ca68b5e9d9348dc6c3d3dc3ac77b1f",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_max_sum_abs_delta_c/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_max_sum_abs_delta_c/cov_dict.npy": {
+      "bytes": 2375,
+      "sha256": "0308e356f6432f55c416409c36a1f6c5c2b46876e80d3324affd634e05f4f1cf",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_max_sum_abs_delta_c/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_min_sum_delta_c/mu_dict.npy": {
+      "bytes": 1835,
+      "sha256": "a9b8f3cfdc21d8baf29c605ef20f940bb5fd89a9a250ec83f489a730d0af0bef",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_min_sum_delta_c/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_min_sum_delta_c/cov_dict.npy": {
+      "bytes": 2375,
+      "sha256": "ea364330a868ead28d57604f1446b6bf39c262c2358e0250ac5d5e1606251359",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_min_sum_delta_c/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_max_sum_delta_c/mu_dict.npy": {
+      "bytes": 1835,
+      "sha256": "8d354b1ec38e9cbbaccc343ca312a340c551b5a2093640329d6f3c2911da2abf",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_max_sum_delta_c/mu_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/pooled_scalar_k10/calib_k10_max_sum_delta_c/cov_dict.npy": {
+      "bytes": 2375,
+      "sha256": "fe92c9d6d9e6c01a9ff5ce3427ec3467c706b22e42749faab4e3ae79864a0186",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/pooled_scalar_k10/calib_k10_max_sum_delta_c/cov_dict.npy"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/subset_trials/cfactor_ci_subsample_trials_n200.json": {
+      "bytes": 236551,
+      "sha256": "1ceb31f167d43942e0d195903ecee7e04cd3b44ef4a2fe23407ba9f4d48c9999",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/expA/cfactor_ci_subsample_trials_n200.json"
+    },
+    "experiments/svdquant/sdxl_w3a4_k10_subsets/outputs/calibration_study_pooled_k1000/k10_selection/selected_trials.json": {
+      "bytes": 81035,
+      "sha256": "c0d43bdf0e46fbabadbf8c2645d3360376a99c461539889c46def1880aadaf28",
+      "remote_path": "calibration/sdxl_w3a4_small_calibration/expB_k10/selected_trials.json"
+    }
+  }
+}
