@@ -7,9 +7,7 @@
 <sup>1</sup>Seoul National University &nbsp;&nbsp; <sup>2</sup>EPFL
 
 [![Project Page](https://img.shields.io/badge/Project-Page-536dfe)](https://sooyoung-ryu.github.io/Q-Drift/)&nbsp;
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](#citation)&nbsp;
-[![Samplers](https://img.shields.io/badge/samplers-Euler%20%7C%20Flow%20Matching%20%7C%20DPM--Solver%2B%2B-blue)](#method)&nbsp;
-[![PTQ](https://img.shields.io/badge/PTQ-SVDQuant%20%7C%20MixDQ-green)](#results)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.18095-b31b1b.svg)](https://arxiv.org/abs/2603.18095)
 
 </div>
 
@@ -18,7 +16,7 @@
 </p>
 <p align="center"><em>SDXL with SVDQuant W3A4. Q-Drift changes only the sampler: same quantized weights, same prompt, same initial noise.</em></p>
 
-**TL;DR** Q-Drift is a plug-and-play sampler correction for quantized diffusion models. It rescales each denoising step by one calibrated scalar, needs no retraining or weight changes, and adds negligible inference cost. It improves FID in all seven main settings across six text-to-image models, three samplers, and two PTQ methods.
+**TL;DR** Q-Drift aims to preserve sampling marginals under quantization by rescaling the sampler update. It improves generation quality with one calibrated factor per step, without retraining or extra model evaluations at inference.
 
 ## Contents
 
@@ -46,7 +44,7 @@ $$
 c_i = \frac{|\Delta\sigma_i|}{2\sigma_i}\,V_{\sigma_i},
 $$
 
-where $V_{\sigma_i}=\mathbb{E}\big[\mathrm{Var}(\Delta\epsilon_i \mid \hat{\epsilon}_\theta)\big]$ is the conditional residual variance of the quantization error, estimated offline from paired full-precision/quantized runs. The update keeps the direction of the quantized step and adjusts only its magnitude, without injecting noise. The same principle extends to flow-matching and DPM-Solver++ samplers (see the paper appendix).
+where $V_{\sigma_i}=\mathbb{E}\big[\mathrm{Var}(\Delta\epsilon_i \mid \hat{\epsilon}_\theta)\big]$ is the conditional residual variance of the quantization error, estimated offline from paired full-precision/quantized runs. The update keeps the direction of the quantized step and adjusts only its magnitude, without injecting noise.
 
 ## Results
 
