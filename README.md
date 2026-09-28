@@ -26,6 +26,7 @@
 - [Reproducing the paper](#reproducing-the-paper)
   - [Repository layout](#repository-layout) · [Install](#install) · [Data and checkpoints](#download-data-and-checkpoints) · [Main experiments](#main-experiments) · [SDXL studies](#sdxl-studies-and-prior-corrections) · [Fresh quantization](#optional-fresh-quantization-and-calibration) · [Evaluation](#evaluate-saved-images)
 - [Citation](#citation)
+- [License](#license)
 
 ## Highlights
 
@@ -213,3 +214,9 @@ If you find Q-Drift useful, please cite:
 ## Acknowledgments
 
 This codebase builds on [DeepCompressor / SVDQuant](https://github.com/mit-han-lab/deepcompressor), [MixDQ](https://github.com/A-suozhang/MixDQ), and [Diffusers](https://github.com/huggingface/diffusers). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for licenses.
+
+## License
+
+Original Q-Drift code and our modifications are licensed under the [Apache License 2.0](LICENSE). Third-party code retains its original license terms and notices. See [Third-Party Notices](THIRD_PARTY_NOTICES.md).
+
+Model weights, datasets, and other external assets remain subject to their providers' terms.
