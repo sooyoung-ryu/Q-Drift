@@ -1,4 +1,69 @@
-# Q-Drift
+<div align="center">
+
+# Q-Drift: Quantization-Aware Drift Correction for Diffusion Model Sampling
+
+**Sooyoung Ryu**<sup>1</sup> &nbsp;&nbsp; **Mathieu Salzmann**<sup>2</sup> &nbsp;&nbsp; **Saqib Javed**<sup>2</sup>
+
+<sup>1</sup>Seoul National University &nbsp;&nbsp; <sup>2</sup>EPFL
+
+[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](#citation)&nbsp;
+[![Samplers](https://img.shields.io/badge/samplers-Euler%20%7C%20Flow%20Matching%20%7C%20DPM--Solver%2B%2B-blue)](#method)&nbsp;
+[![PTQ](https://img.shields.io/badge/PTQ-SVDQuant%20%7C%20MixDQ-green)](#results)
+
+</div>
+
+<p align="center">
+  <img src="assets/teaser.jpg" width="95%" alt="SDXL (SVDQuant W3A4): FP16, quantized baseline, and Q-Drift">
+</p>
+<p align="center"><em>SDXL with SVDQuant W3A4. Q-Drift changes only the sampler: same quantized weights, same prompt, same initial noise.</em></p>
+
+**TL;DR** Q-Drift is a plug-and-play sampler correction for quantized diffusion models. It rescales each denoising step by one calibrated scalar, needs no retraining or weight changes, and adds negligible inference cost. It improves FID in all seven main settings across six text-to-image models, three samplers, and two PTQ methods.
+
+## Contents
+
+- [Highlights](#highlights)
+- [Method](#method)
+- [Results](#results)
+- [Reproducing the paper](#reproducing-the-paper)
+  - [Repository layout](#repository-layout) · [Install](#install) · [Data and checkpoints](#download-data-and-checkpoints) · [Main experiments](#main-experiments) · [SDXL studies](#sdxl-studies-and-prior-corrections) · [Fresh quantization](#optional-fresh-quantization-and-calibration) · [Evaluation](#evaluate-saved-images)
+- [Citation](#citation)
+
+## Highlights
+
+- **Sampler-side and plug-and-play.** Q-Drift complements PTQ methods such as SVDQuant and MixDQ. It leaves the network untouched and changes only how each update is applied.
+- **One scalar per step.** The correction is a single precomputed factor per sampling step, derived from the conditional residual variance of the quantization error.
+- **Cheap calibration.** On SDXL, statistics from as few as **10** paired full-precision/quantized runs stay within 0.17 FID of the 1,000-run reference, even for adversarially selected subsets.
+- **Broad coverage.** FLUX.1-dev, FLUX.1-schnell, SDXL, SDXL-Turbo, PixArt-Σ, and Sana; DiT and U-Net backbones; Euler, flow-matching, and DPM-Solver++ samplers.
+
+## Method
+
+Quantization perturbs every denoiser output, and in iterative sampling these perturbations accumulate along the trajectory. Q-Drift treats the part of the quantization error that the quantized output cannot explain as an implicit stochastic perturbation. It matches its variance to the diffusion term of a generalized marginal-preserving SDE, and applies the drift paired with that diffusion as a deterministic rescaling of the quantized update:
+
+$$
+\mathbf{x}_{i+1} = \mathbf{x}_i + \Delta\sigma_i\,(1+c_i)\,\hat{\epsilon}_\theta(\mathbf{x}_i,\sigma_i,c),
+\qquad
+c_i = \frac{|\Delta\sigma_i|}{2\sigma_i}\,V_{\sigma_i},
+$$
+
+where $V_{\sigma_i}=\mathbb{E}\big[\mathrm{Var}(\Delta\epsilon_i \mid \hat{\epsilon}_\theta)\big]$ is the conditional residual variance of the quantization error, estimated offline from paired full-precision/quantized runs. The update keeps the direction of the quantized step and adjusts only its magnitude, without injecting noise. The same principle extends to flow-matching and DPM-Solver++ samplers (see the paper appendix).
+
+## Results
+
+FID and CLIP on 5,000 MJHQ-30K prompts. Q-Drift is applied at sampling time on top of the same quantized model.
+
+| Model | PTQ | FP16 FID | Quantized FID | **Q-Drift FID** | ΔFID | Q-Drift CLIP (Quantized) |
+|:--|:--|:--:|:--:|:--:|:--:|:--:|
+| FLUX.1-dev | SVDQuant W3A4 | 20.68 | 24.14 | **24.06** | −0.08 | 24.69 (24.66) |
+| FLUX.1-schnell | SVDQuant W3A4 | 19.18 | 23.10 | **22.13** | −0.97 | 25.57 (25.43) |
+| SDXL | SVDQuant W3A4 | 17.20 | 31.73 | **30.69** | −1.04 | 26.40 (26.39) |
+| SDXL-Turbo | SVDQuant W3A4 | 24.77 | 29.17 | **27.64** | −1.53 | 26.38 (26.38) |
+| SDXL-Turbo | MixDQ W4A8 | 24.77 | 28.37 | **27.38** | −0.99 | 25.87 (25.90) |
+| PixArt-Σ | SVDQuant W3A4 | 16.52 | 48.85 | **44.06** | −4.79 | 24.56 (24.41) |
+| Sana | SVDQuant W3A4 | 15.98 | 17.32 | **16.54** | −0.78 | 27.20 (27.19) |
+
+Q-Drift also lowers KID in all seven settings, and the paired 95% bootstrap interval of ΔFID lies below zero in six of them. The paper additionally reports comparisons with PTQD, QNCD, and D²-DPM, calibration-size and design ablations, and milder quantization settings.
+
+## Reproducing the paper
 
 Run all commands from this folder (the one containing this README). They require Linux, an NVIDIA GPU, a CUDA development toolkit (`nvcc`), and a C++17 compiler. Every evaluation uses 5,000 MJHQ-30K prompts.
 
@@ -131,3 +196,20 @@ python evaluation/compute_distribution_metrics.py compute \
   --fid-bootstrap 1000 --fid-seed 5678 --compute-fid --device cuda \
   --output outputs/distribution_metrics.json
 ```
+
+## Citation
+
+If you find Q-Drift useful, please cite:
+
+```bibtex
+@article{ryu2026qdrift,
+  title   = {Q-Drift: Quantization-Aware Drift Correction for Diffusion Model Sampling},
+  author  = {Ryu, Sooyoung and Salzmann, Mathieu and Javed, Saqib},
+  journal = {arXiv preprint},
+  year    = {2026}
+}
+```
+
+## Acknowledgments
+
+This codebase builds on [DeepCompressor / SVDQuant](https://github.com/mit-han-lab/deepcompressor), [MixDQ](https://github.com/A-suozhang/MixDQ), and [Diffusers](https://github.com/huggingface/diffusers). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for licenses.
